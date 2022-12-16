@@ -32,53 +32,19 @@ const Login=()=>{
     };
   
     return (
-      <form
-        style={{ display: "flex", alignItem: "center", justifyContent: "center" }}
-        onSubmit={login}
-      >
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <h1>Register</h1>
-          <p>Please fill in this form to create an account.</p>
-  
-          <label for="email">
-            <b>Email</b>
-          </label>
-          <input
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            id="email"
-            required
-            style={{ marginBottom: "1rem", height: "20px" }}
-            onChange={(e)=>{setUserName(e.target.value)}}
-          />
-  
-          <label for="psw">
-            <b>Password</b>
-          </label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            id="psw"
-            required
-            style={{ marginBottom: "1rem", height: "20px" }}
-            onChange={(e)=>{setPassword(e.target.value)}}
-          />
-  
-          <div>
-            <button type="submit" class="registerbtn">
-              Login
-            </button>
-          </div>
-  
-          <div class="container signin">
-            <p>
-              Don't have an account <a href="#" onClick={()=>{navigate("/register")}}>Sign in </a>.
-            </p>
+
+      <div className="container">
+      <div className="row">
+        <div className="col-md-3"></div>
+        <div className="col-md-6 mt-5">
+          <div className="card">
+            
           </div>
         </div>
-      </form>
+        <div className="col-md-3"></div>
+      </div>
+      </div>
+      
     );
 }
 
